@@ -1,0 +1,23 @@
+
+@media screen and (min-width: 480px) {
+    .container {
+    max-width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+    } 
+   
+    .hero-container {
+        width: 100%;
+    }
+    .hero {  
+        background-color: #2e2f42;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/tablet-bg-min.jpg");
+    }
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/tablet-bg-retuna-min.jpg");
+  }
+}
+}

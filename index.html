@@ -20,6 +20,9 @@
 
   <!-- custom style start -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   <!-- custom style end -->
   </head>
 
@@ -27,7 +30,7 @@
   <!--Секція хедер-->
     <header class="header">
     <div class="container header-container">
-      <a class="header-logo" href="">Web<span class="header-logo-span">Studio</span></a>
+      <a class="header-logo" href="./index.html">Web<span class="header-logo-span">Studio</span></a>
       <nav class="header-nav">
         <ul class="header-list list">
           <li class="header-list-item">
@@ -51,10 +54,85 @@
           </li>
         </ul>
       </address>
+      <button type="button" class="mobile-menu-open" data-menu-open>
+        <svg class="mobile-menu-open_icon" width="32" height="22">
+          <use href="./images/icons.svg#burger"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+      <button type="button" class="mobile-menu-close-btn" data-menu-close>
+        <svg class="mobile-menu-btn-icon" width="8px" height="8px">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <nav>
+    <ul class="mobile-menu-list list">
+      <li class="mobile-menu-li">
+        <a class="mobile-menu-link link" href="./index.html">Studio</a>
+      </li>
+      <li class="mobile-menu-li">
+        <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+      </li>
+      <li class="mobile-menu-li">
+        <a class="mobile-menu-link link mobile-menu-link-current" href="">Contacts</a>
+      </li>
+    </ul>
+    </nav>
+    <div class="mobile-menu-address">
+      <address class="mobile-address">
+        <ul class="mobile-address-list list">
+          <li class="mobile-address-contacts">
+            <a class="mobile-address-link-current link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mobile-address-contacts">
+            <a class="mobile-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </address>
+      <ul class="mobile-social-media list">
+        <li class="mobile-social-media-item">
+          <a class="mob-social-media-link link" href="" target="_blank" rel="noopener noreferrer"
+            aria-lable="instagram">
+            <svg class="mob-social-media-icon" width="16px" height="16px">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-media">
+          <a class="mob-social-media-link link" href="" target="_blank" rel="noopener noreferrer"
+            aria-lable="twitter">
+            <svg class="mob-social-media-icon" width="16px" height="16px">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-media">
+          <a class="mob-social-media-link link" href="" target="_blank"
+            rel="noopener noreferrer" aria-lable="facebook">
+            <svg class="mob-social-media-icon" width="16px" height="16px">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-media">
+          <a class="mob-social-media-link link" href="" target="_blank"
+            rel="noopener noreferrer" aria-lable="linkedin">
+            <svg class="mob-social-media-icon" width="16px" height="16px">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    
     </div>
   </header>
   <!--Блок унікального контенту на сторінці-->
     <main>
+
     <!--Секція Hero-->
       <section class="hero">
       <div class="container hero-container">
@@ -62,6 +140,7 @@
         <button class="hero-btn" type="button" data-modal-open>Order Service</button>
       </div>
       </section>
+
     <!--Секція Advantages-->
       <section class="advantages">
         <div class="container">
@@ -118,30 +197,44 @@
         </ul>
       </div>
     </section>
-    <!--Секція About-->
+    
+    <!-- Секція About-->
     <section class="about">
       <div class="container">
         <h2 class="about-title title">What are we doing</h2>
         <ul class="about-list list">
           <li class="about-list-item">
-            <img class="about-img" src="./images/img1.jpg" alt="laptop" width="360" height="300" />
+            <img class="about-img"
+            srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
+            src="./images/img1.jpg" 
+            alt="laptop" width="360" height="300" />
           </li>
           <li class="about-list-item">
-            <img class="about-img" src="./images/img2.jpg" alt="phone" width="360" height="300" />
+            <img class="about-img"
+            srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x" 
+            src="./images/img2.jpg" 
+            alt="phone" width="360" height="300" />
           </li>
           <li class="about-list-item">
-            <img class="about-img" src="./images/img3.jpg" alt="gadgets" width="360" height="300" />
+            <img class="about-img"
+            srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x" 
+            src="./images/img3.jpg" 
+            alt="gadgets" width="360" height="300" />
           </li>
         </ul>
       </div>
     </section>
+
     <!--Секція Team-->
     <section class="team">
-      <div class="container">
+      <div class="container team-container">
         <h2 class="team-title title">Our Team</h2>
         <ul class="team-list list">
           <li class="team-list-item">
-            <img src="./images/designer.jpg" alt="a man with a beard" width="264" height="260" />
+            <img
+            srcset="./images/designer.jpg 1x, ./images/designer-2x.jpg 2x" 
+            src="./images/designer.jpg" 
+            alt="a man with a beard" width="264" height="260" />
             <div class="team-text">
               <h3 class="team-name undertitle">Mark Guerrero</h3>
               <p class="team-position text">Product Designer</p>
@@ -157,7 +250,7 @@
                 <li class="social-media-item">
                   <a class="social-media-link link" href="" target="_blank" rel="noopener noreferrer"
                     aria-lable="twitter">
-                    <svg class="social-media-icon" class="social-media-icon" width="16px" height="16px">
+                    <svg class="social-media-icon" width="16px" height="16px">
                       <use href="./images/icons.svg#twitter"></use>
                     </svg>
                   </a>
@@ -181,7 +274,10 @@
             </div>
           </li>
           <li class="team-list-item">
-            <img src="./images/developer.jpg" alt="a young man" width="264" height="260" />
+            <img
+            srcset="./images/developer.jpg 1x, ./images/developer-2x.jpg 2x"
+            src="./images/developer.jpg" 
+            alt="a young man" width="264" height="260" />
             <div class="team-text">
               <h3 class="team-name undertitle">Tom Ford</h3>
               <p class="team-position text">Frontend Developer</p>
@@ -220,7 +316,10 @@
             </div>
           </li>
           <li class="team-list-item">
-            <img src="./images/marketing.jpg" alt="a woman with a long black hair" width="264" height="260" />
+            <img
+            srcset="./images/marketing.jpg 1x, ./images/marketing-2x.jpg 2x" 
+            src="./images/marketing.jpg" 
+            alt="a woman with a long black hair" width="264" height="260" />
             <div class="team-text">
               <h3 class="team-name undertitle">Camila Garcia</h3>
               <p class="team-position text">Marketing</p>
@@ -259,7 +358,10 @@
             </div>
           </li>
           <li class="team-list-item">
-            <img src="./images/uidesigner.jpg" alt="a man with a short haircut" width="264" height="260" />
+            <img
+            srcset="./images/uidesigner.jpg 1x, ./images/uidesigner-2x.jpg 2x" 
+            src="./images/uidesigner.jpg" 
+            alt="a man with a short haircut" width="264" height="260" />
             <div class="team-text">
               <h3 class="team-name undertitle">Daniel Wilson</h3>
               <p class="team-position text">UI Designer</p>
@@ -300,9 +402,10 @@
         </ul>
       </div>
     </section>
+
     <!-- Секція Customers -->
     <section class="customers">
-      <div class="container">
+      <div class="container customers-container">
         <h2 class="customers-title title">Customers</h2>
         <ul class="customers-list list">
           <li class="customers-item">
@@ -336,6 +439,7 @@
       </div>
     </section>
   </main>
+
   <!--Секція Футер-->
   <footer class="footer">
     <div class="container footer-container">
@@ -346,6 +450,7 @@
             marketing & growth solutions.
           </p>
       </div>
+
     <!-- Футер соцмережі -->
       <div class="footer-group">
         <h3 class="footer-social-title">Social media</h3>
@@ -364,6 +469,7 @@
           </svg> </a></li>
         </ul>
       </div>
+
       <!-- Footer FORM -->
       <div class="footer-form">
         <p class="footer-form-title">Subscribe</p>
@@ -382,6 +488,7 @@
       </div>
       </div>
     </footer>
+
     <!-- Модальне вікно -->
     <!-- ФОРМА -->
     <div class="backdrop is-hidden" data-modal>
@@ -446,5 +553,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,152 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+.header {
+    padding-top: 24px;
+    padding-bottom: 0;
+}
+.address-list {
+    flex-direction: column;
+}
+address {
+    font-style: normal;
+    margin-left: auto;
+  }
+  .address-contacts-link {
+    display: block;
+  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--grey-txt-cl);
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .address-contacts-link:hover,
+  .address-contacts-link:focus {
+    color: var(--violet-txt-cl);
+  }
+.hero {
+  padding-top: 112px;
+  padding-bottom: 108px;
+
+  background-color: #2e2f42;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/backgraund.jpg");
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/desktop-bg-retuna-min.jpg");
+  }
+}
+.hero-container {
+    display: block;
+}
+.mobile-menu-open {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+.hero-title {
+    max-width: 496px;
+    margin: 0 auto;
+  
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  .hero-btn {
+    margin-top: 48px;
+  }
+    /* -----section ADVANTAGES--------- */
+    .advantages-list {
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+    .advantages-list-item {
+        width: calc((100% - 24px) / 2);
+        }  
+
+    /* --------- TEAM tablet------- */
+    .team {
+    padding-top: 96px;
+    padding-bottom: 104px
+    }
+    .container.team-container {
+    width: 552px;
+    }
+    .team-list {
+    display: flex;
+    row-gap: 64px;
+    column-gap: 24px;
+    }
+    .team-list-item {
+    width: calc((100% - 24px) / 2);
+    }  
+      /* ------CUSTOMERS TABLET------- */
+    .customers-container {
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
+    .customers-list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+    .customers-item {
+        width: calc((100% - 48px) / 3);
+        
+    }
+    
+    .customers-item-link {
+        width: 168px;
+        height: 88px;
+    }
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+}
+.footer-column {
+    margin-bottom: 0;
+    margin-left: 92px;
+}
+.footer-form {
+    margin-left: 92px;
+}
+.footer-form-title {
+    justify-content: flex-start;
+}
+.footer-forms {
+display: flex;
+gap: 16px;
+margin-top: 16px;
+}
+.footer-group {
+margin-bottom: 0;
+}
+.footer-form-input {
+    width: 264px;
+}
+.footer-form-btn {
+    margin-top: 0;
+}
+.modal {
+    width: 408px;
+}
+}
