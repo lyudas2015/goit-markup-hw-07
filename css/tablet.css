@@ -71,6 +71,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     margin-top: 48px;
   }
     /* -----section ADVANTAGES--------- */
+    .advantages-title {
+        justify-content: flex-start;
+    }
     .advantages-list {
         row-gap: 72px;
         column-gap: 24px;
@@ -97,8 +100,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     }  
       /* ------CUSTOMERS TABLET------- */
     .customers-container {
-        padding-left: 108px;
-        padding-right: 108px;
+        width: 552px;
     }
 
     .customers-list {
@@ -117,6 +119,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         height: 88px;
     }
 .footer-container {
+    width: 552px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -124,11 +127,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 }
 .footer-column {
     margin-bottom: 0;
-    margin-left: 92px;
 }
-.footer-form {
-    margin-left: 92px;
-}
+
 .footer-form-title {
     justify-content: flex-start;
 }
