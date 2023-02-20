@@ -24,6 +24,17 @@
 }
 .modal {
     width: 392px;
-    height: 584px;
+}
+.mobile-social-media {
+    gap: 56px;
+}
+.mobile-address-link-current {
+    font-size: 36px;
+}
+.modal-form-link {
+    font-size: 12px;
+}
+.modal-form-check-desk {
+    font-size: 12px;
 }
 }
